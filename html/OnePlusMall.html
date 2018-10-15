@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一加商城</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/OnePlusMall.css">
+    <link rel="stylesheet" href="../css/iconfont/iconfont.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/oneplus.ico">
+</head>
+<body>
+<header>
+    <div class="container-fluid col-xl-11 d-flex p-0">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="col-1 navbar-header d-xl-none ">
+            <button type="button" class="btn bg-white btn-list">
+                <span class="iconfont icon-list custom"></span>
+            </button>
+        </div>
+        <!--brand-->
+        <a class="col-xl-2 mr-xl-5 col-1 m-auto m-xl-0 iconfont icon-yijia text-danger ic-yijia"></a>
+        <!--phone-nav-->
+        <div class="col-xl-6 col-12 d-xl-flex collapse full-screen p-xl">
+            <ul class="nav navbar-nav navbar-expand-xl d-xl-flex">
+                <li class="d-xl-none own-li">
+                    <button type="button" class="btn bg-transparent btn-remove">
+                        <span class="iconfont icon-remove custom"></span>
+                    </button>
+                    <p class="text-dark">欢迎访问一加官网，请<a href="../html/OnePlusLogin.html">登录</a></p>
+                </li>
+                <li class="col-xl-4"><a href="OnePlusSix.html">OnePlus 6</a></li>
+                <li class="col-xl-4"><a href="OnePlusMall.html">商城</a></li>
+                <li class="col-xl-4"><a href="service.html">服务</a></li>
+                <li class="col-xl-4"><a href="oneplus-blog.html">博客</a></li>
+                <li class="col-xl-4"><a>论坛</a></li>
+                <li class="position-relative d-xl-none mt-3"><i class="iconfont icon-search own-search"></i><input
+                        type="text" class="col-10 mt-1" style="text-indent: 5%"></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+        <ul class="header__right col-xl-4 col-1 list-unstyled">
+            <li class="col-xl-2 d-none d-xl-flex account">
+                <span class="iconfont icon-zhanghu ic-zhanghu"></span>
+                <ul class="account-detail">
+                    <li><a href="#">订单</a></li>
+                    <li><a href="#">账户</a></li>
+                    <li><a href="recommend.html">推荐有礼</a></li>
+                    <li class="border-bottom-0 mt-4"><a href="../html/OnePlusLogin.html">登录</a></li>
+                </ul>
+            </li>
+            <li class="col-xl-2 shopping">
+                <span class=" iconfont icon-shoppingbagalt ic-shop"></span>
+                <ul class="shopping-detail">
+                    <li class="text-center pt-3 pb-4">您的购物车里没有商品</li>
+                    <li>
+                        <button class="btn btn-danger col-12">去购物</button>
+                    </li>
+                </ul>
+            </li>
+            <li class="border-bottom-0"><span class="col-xl-2 d-none d-xl-inline iconfont icon-search"></span></li>
+        </ul>
+
+    </div>
+    <!-- /.container-fluid -->
+</header>
+<section>
+    <!--<div class="container-fluid">-->
+    <div class="catogery d-none d-md-block">
+        <ul class="d-md-flex list-unstyled justify-content-center d-none mb-0">
+            <li class=" "><a href="#" class="text-dark"><i></i> <span>手机</span></a></li>
+            <li class=" "><a href="#" class="text-dark"><i></i> <span>手机</span></a></li>
+            <li class=" "><a href="#" class="text-dark"><i></i> <span>手机</span></a></li>
+            <li class=" "><a href="#" class="text-dark"><i></i> <span>手机</span></a></li>
+            <li class=" "><a href="#" class="text-dark"><i></i> <span>手机</span></a></li>
+            <li class=" "><a href="#" class="text-dark"><i></i> <span>手机</span></a></li>
+        </ul>
+
+    </div>
+
+    <!--非pc分类导航-->
+    <div class="catogery-phone ">
+        <ul class="d-flex d-md-none list-unstyled shadow pl-3">
+            <li class=""><a href="#">耳机</a></li>
+            <li class=""><a href="#">耳机</a></li>
+            <li class=""><a href="#">耳机</a></li>
+            <li class=""><a href="#">耳机</a></li>
+            <li class=""><a href="#">耳机</a></li>
+            <li class=""><a href="#">耳机</a></li>
+            <li class="flex-grow-1 text-right"><a href="javascript:;"> <span id="arrow_down"
+                                                                             class="iconfont icon-arrow"></span>
+            </a></li>
+
+        </ul>
+
+    </div>
+
+    <!--非pc端下拉分类页面-->
+    <div class="catogery-mask">
+        <ul class="list-unstyled mt-5">
+            <div class="row border-info border">
+                <li class="col-6"><a href="#"><span></span>
+                    <p>盖子</p></a></li>
+                <li class="col-6"><a href="#"><span></span>
+                    <p>盖子</p></a></li>
+            </div>
+            <div class="row  ">
+                <li class="col-6"><a href="#"><span></span>
+                    <p>盖子</p></a></li>
+                <li class="col-6"><a href="#"><span></span>
+                    <p>盖子</p></a></li>
+            </div>
+            <div class="row border-info border">
+                <li class="col-6"><a href="#"><span></span>
+                    <p>盖子</p></a></li>
+                <li class="col-6"><a href="#"><span></span>
+                    <p>盖子</p></a></li>
+            </div>
+
+        </ul>
+    </div>
+
+    <!--顶部图片-->
+    <div class="img-big  d-none d-md-block" id="img_big">
+        <a href="#">
+            <!--<img class="" src="../img/de01425aa2c3303dd2a8b4b04abb3cbe.jpg" alt="">-->
+        </a>
+    </div>
+
+
+    <div class="container">
+        <div class="mt-5">
+            <ul class="d-md-flex d-block list-unstyled justify-content-between img-center w-100">
+                <li class="col-md-4 col-12 mb-2"><a href="Dash.html"><img src="../img/Dash.jpg"
+                                                                 alt=""></a></li>
+                <li class="col-md-4 col-12 mb-2"><a href=""><img src="../img/527b9d139ee40ed424fbcd02be08370e.jpg"
+                                                                 alt=""></a></li>
+                <li class="col-md-4 col-12"><a href=""><img src="../img/527b9d139ee40ed424fbcd02be08370e.jpg"
+                                                            alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--热销配件-->
+    <div class="con-cus w-100">
+        <div class="container pt-3 pb-5">
+
+            <div>
+                <h3 class="mb-4 mt-5">一加生活周边</h3>
+                <ul class="list-unstyled  row hot-cus ">
+                    <!--<div class="row">-->
+                    <li class="col-sm-3 bg-white col-6 border border-info">
+                        <img class="w-100" src="../img/842f3dc1bfdad71f05cd8ed5e4706cf2.png" alt="">
+                        <p class="text-center">oneplus6感化玻璃膜3D</p>
+                        <p class="text-center">129元</p>
+                    </li>
+                    <li class="col-sm-3 bg-white col-6 border border-info">
+                        <img class="w-100" src="../img/842f3dc1bfdad71f05cd8ed5e4706cf2.png" alt="">
+                        <p class="text-center">oneplus6感化玻璃膜3D</p>
+                        <p class="text-center">129元</p>
+                    </li>
+                    <!--</div>-->
+                    <!--<div class="row">-->
+
+                    <li class="col-sm-3 bg-white border border-info col-6">
+                        <img class="w-100" src="../img/842f3dc1bfdad71f05cd8ed5e4706cf2.png" alt="">
+                        <p class="text-center">oneplus6感化玻璃膜3D</p>
+                        <p class="text-center">129元</p>
+                    </li>
+                    <li class="col-sm-3 bg-white col-6 border border-info">
+                        <img class="w-100" src="../img/842f3dc1bfdad71f05cd8ed5e4706cf2.png" alt="">
+                        <p class="text-center">oneplus6感化玻璃膜3D</p>
+                        <p class="text-center">129元</p>
+                    </li>
+                    <!--</div>-->
+                </ul>
+            </div>
+            <div>
+                <h3 class="mb-4 mt-5">OnePlus6热销配件</h3>
+                <ul class="list-unstyled  row hot-cus ">
+                    <!--<div class="row">-->
+                    <li class="col-sm-3 bg-white col-6 border border-info">
+                        <img class="w-100" src="../img/842f3dc1bfdad71f05cd8ed5e4706cf2.png" alt="">
+                        <p class="text-center">oneplus6感化玻璃膜3D</p>
+                        <p class="text-center">129元</p>
+                    </li>
+                    <li class="col-sm-3 bg-white col-6 border border-info">
+                        <img class="w-100" src="../img/842f3dc1bfdad71f05cd8ed5e4706cf2.png" alt="">
+                        <p class="text-center">oneplus6感化玻璃膜3D</p>
+                        <p class="text-center">129元</p>
+                    </li>
+                    <!--</div>-->
+                    <!--<div class="row">-->
+
+                    <li class="col-sm-3 bg-white border border-info col-6">
+                        <img class="w-100" src="../img/842f3dc1bfdad71f05cd8ed5e4706cf2.png" alt="">
+                        <p class="text-center">oneplus6感化玻璃膜3D</p>
+                        <p class="text-center">129元</p>
+                    </li>
+
+                    <!--</div>-->
+                </ul>
+            </div>
+            <div>
+                <h3 class="mb-4 mt-5">OnePlus5T热销配件</h3>
+                <ul class="list-unstyled d-flex hot-cus">
+                    <li class="col-3 bg-white mr-1">
+                        <h5 class="text-right"><span class="text-right badge badge-danger justify-content-end">8折</span>
+                        </h5>
+                        <img class="w-100" src="../img/842f3dc1bfdad71f05cd8ed5e4706cf2.png" alt="">
+                        <p class="text-center">oneplus6感化玻璃膜3D</p>
+                        <p class="text-center">129元</p>
+                    </li>
+                    <li class="col-3 bg-white mr-1 ml-1">
+                        <h5 class="text-right"><span class="text-right badge badge-danger justify-content-end">8折</span>
+                        </h5>
+                        <img class="w-100" src="../img/842f3dc1bfdad71f05cd8ed5e4706cf2.png" alt="">
+                        <p class="text-center">oneplus6感化玻璃膜3D</p>
+                        <p class="text-center">129元</p>
+                    </li>
+                    <li class="col-3 bg-white mr-1 ml-1">
+                        <h5 class="text-right"><span class="text-right badge badge-danger justify-content-end">8折</span>
+                        </h5>
+
+                        <img class="w-100" src="../img/842f3dc1bfdad71f05cd8ed5e4706cf2.png" alt="">
+                        <p class="text-center">oneplus6感化玻璃膜3D</p>
+                        <p class="text-center">129元</p>
+                    </li>
+                    <li class="col-3 bg-white ml-1">
+                        <h5 class="text-right"><span class="text-right badge badge-danger justify-content-end">8折</span>
+                        </h5>
+                        <img class="w-100" src="../img/842f3dc1bfdad71f05cd8ed5e4706cf2.png"
+                             alt="">
+                        <p class="text-center">oneplus6感化玻璃膜3D</p>
+                        <p class="text-center">129元</p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<footer class="container-fluid p-xl-0">
+    <div class="row footer__row footer__top">
+        <dl class="col-xl-2 mr-xl-5 own-ft">
+            <dt class="">一加产品<span class="d-xl-none">+</span></dt>
+            <dd class="">OnePlus 6</dd>
+            <dd class="">OnePlus 5T</dd>
+            <dd class="">OnePlus 5</dd>
+            <dd class="">OnePlus 3T</dd>
+        </dl>
+        <dl class="col-xl-2 mr-xl-5 own-ft">
+            <dt class="">热门活动<span class="d-xl-none">+</span></dt>
+            <dd class="">推荐有礼</dd>
+            <dd class="">以旧换新</dd>
+            <dd class="">Shot on OnePlus</dd>
+        </dl>
+        <dl class="col-xl-2 mr-xl-5 own-ft">
+            <dt class="">关于一加<span class="d-xl-none">+</span></dt>
+            <dd class="">了解一加</dd>
+            <dd class="">加入一加</dd>
+            <dd class="">H2OS</dd>
+            <dd class="">云服务</dd>
+        </dl>
+        <dl class="col-xl-2 own-ft">
+            <dt class="">服务支持<span class="d-xl-none">+</span></dt>
+            <dd class="">购买帮助</dd>
+            <dd class="">用户手册</dd>
+            <dd class="">寄修服务</dd>
+            <dd class="">服务中心</dd>
+            <dd class="">联系我们</dd>
+        </dl>
+        <div class="col-xl-2 own-ft-last">
+            <p class="text-center footer__p-phone">
+                <i class="d-inline-block iconfont icon-phone"></i>
+                <span>400-800-1111</span>
+            </p>
+            <button class="btn btn-outline-dark border-dark p-md-3 pl-md-5 pr-md-5">在线客服</button>
+            <p class="pt-md-2 m-md-0">周一至周日 9:00 - 22:00</p>
+            <p class="">
+                <i class="d-inline-block iconfont icon-iconfontweixin footer__i text-success">
+                    <img class="qr-code" src="../img/qr-code.png"/>
+                </i>
+                <i class="d-inline-block iconfont icon-weibo footer__i text-danger"></i>
+            </p>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-own">
+        <div class="footer__row footer__center">
+            <p class=""><i class="d-inline-block china"></i>中国( 简体中文/CNY )</p>
+            <p class="last-p col-xl-4 text-xl-right"><span>隐私政策</span> | <span>用户协议</span> | <span>安全问题反馈</span></p>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-own">
+        <div class="footer__row footer__bottom">
+            <div class="footer__bottom__left">
+                <p class="first-p">© 2013-2018 OnePlus. All Rights Reserved. (粤ICP备13080605号-4)</p>
+                <p class=""><img src="../img/police.png" alt="">粤公网安备 44030402001407号</p>
+            </div>
+            <img src="../img/trust.png" alt="" width="83" height="30">
+        </div>
+    </div>
+</footer>
+
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/OnePlusMall.js"></script>
+</body>
+</html>

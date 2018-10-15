@@ -1,0 +1,326 @@
+.other {
+    font-size: 12px;
+    position: relative;
+    top: 0;
+}
+
+.other>.line::after {
+    position: absolute;
+    top: 7px;
+    left: 79px;
+    content: '';
+    display: inline-block;
+    border: 1px solid #e6e6e6;
+    width: 100%;
+}
+.other>span::after {
+    position: absolute;
+    top: 7px;
+    left: -82px;
+    content: '';
+    display: inline-block;
+    border: 1px solid #e6e6e6;
+    width: 100%;
+}
+.icon>span {
+    font-size: 40px;
+    margin:0 10px;
+}
+
+/*头部*/
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 14px;
+    color: #828282;
+    border-bottom: 1px solid lightgray;
+    transition: all .5s;
+}
+header a{
+    color: #828282;
+}
+header .ic-yijia{
+    font-size: 2rem;
+}
+header .container-fluid span{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #828282;
+}
+.full-screen{
+    line-height: 350%;
+    background-color: #fff;
+}
+.header__right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+.header__right>li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color .5s;
+}
+.account-detail, .shopping-detail{
+    position: absolute;
+    z-index: 2;
+    left: -200px; top: 52px;
+    width: 320px;
+    line-height: 300%;
+    padding: 40%;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,.1);
+    list-style: none;
+    display: none;
+}
+.account-detail li{
+    border-bottom: 1px solid lightgray;
+}
+/*底部*/
+footer{
+    line-height: 250%;
+    border-top: 1px solid rgba(0,0,0,.1);
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #fff;
+}
+.footer__row{
+    max-width: 1200px;
+    padding: 2% 0;
+    margin: 0 auto;
+}
+footer dt{
+    line-height: 300%;
+    font-weight: 300;
+}
+footer dd{
+    padding-left: 5%;
+    font-size:14px;
+    color: #828282;
+    margin-left: -10px;
+}
+footer dd:hover{
+    color: #5b5b5b;
+    cursor: pointer;
+}
+footer .own-ft span{
+    float: right;
+    color: #101920;
+    font-weight: 800;
+    font-size: 30px;
+}
+footer .own-ft .hidden{
+    visibility: hidden;
+}
+footer .own-ft-last{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: #828282;
+}
+.footer__p-phone{
+    font-size: 20px;
+    color: black;
+}
+.footer__i{
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
+}
+.qr-code{
+    position: absolute;
+    z-index: 1;
+    margin: -160px 0 0 -51px;
+    width: 120px;
+    height: 120px;
+    display: none;
+}
+.footer__i:first-child:hover .qr-code{
+    display: block;
+}
+.bg-own{
+    background-color: #f9f9f9;
+}
+.footer__center, .footer__bottom{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.footer__center{
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.china{
+    width: 31px;
+    height: 21px;
+    margin-right: 15px;
+    vertical-align: middle;
+    background: url(../img/country_sprit.png) -3px -127px/auto;
+    transform: scale(.7);
+}
+footer .last-p{
+    color: rgba(0,0,0,.1);
+    font-size: 12px;
+}
+.last-p span{
+    padding: 0 5%;
+    color: #828282;
+}
+.footer__bottom__left{
+    line-height: 100%;
+}
+.footer__bottom__left .first-p{
+    color: #828282;
+    font-size: 12px;
+}
+.police{
+    background: url(../img/police.png);
+}
+@media (max-width: 1199.9px) {
+    /*头部*/
+    .full-screen{
+        position: fixed;
+        z-index: 2;
+        left: 0; top: 0;
+        width: 9999px;
+        height: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 16px;
+    }
+    .full-screen li{
+        padding-left: 30px;
+    }
+    .full-screen .own-li{
+        background-color: #f6f6f6;
+    }
+    .full-screen .btn-remove{
+        position: relative;
+        margin-left: -16px;
+    }
+    .full-screen .own-search{
+        position: absolute;
+        z-index: 1;
+        margin: 1% 0 0 2%;
+        font-size: 1.2rem;
+        color: #101920;
+    }
+    /*底部*/
+    footer.container-fluid{
+        padding: 0;
+    }
+    .own-ft{
+        height: 48px;
+        border-bottom: 1px solid rgba(0,0,0,.1);
+        overflow: hidden;
+        transition: all .5s;
+    }
+    .own-ft-animating{
+        height: 250px;
+    }
+    footer .own-ft-last{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer>.container-fluid{
+        padding: 0;
+    }
+    .footer__center{
+        flex-flow: column wrap;
+        text-align: center;
+    }
+    .footer__center p{
+        border-bottom: 1px solid rgba(0,0,0,.1);
+    }
+    .last-p span{
+        padding: 0 1%;
+    }
+}
+@media (min-width: 1200px){
+    .full-screen li{
+        text-align: center;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom-color .5s, color .5s;
+    }
+    .full-screen li:hover{
+        border-bottom: 2px solid #eb0028;
+    }
+    .full-screen li:hover a{
+        color: #eb0028;
+        text-decoration: none;
+    }
+    .header__right>li:hover{
+        border-bottom: 2px solid #101920;
+    }
+    .header__right>li:hover span{
+        color: #101920;
+        transition: color .5s ;
+    }
+    .account:hover .account-detail{
+        display: block;
+    }
+    .account-detail a{
+        text-decoration: none;
+    }
+    .shopping:hover .shopping-detail{
+        display: block;
+    }
+}
+@media (max-width: 768px){
+    .footer__bottom{
+        flex-flow: column wrap;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+#slider {
+    width: 300px;
+    height: 36px;
+    position: relative;
+    text-align: center;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    border-radius: 18px;
+    background-color: #ccc;
+}
+
+#slider_bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #dbf2ed;
+    z-index: 1;
+}
+
+#label {
+    width: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    cursor: pointer;
+    height: 36px;
+    width: 50px;
+    border-radius: 18px;
+    background-color: #4db4f2;
+}
+
+#labelTip {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    font-size: 14px;
+    color: #fff;
+    line-height: 36px;
+    text-align: center;
+    z-index: 2;
+}

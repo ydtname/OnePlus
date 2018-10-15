@@ -1,0 +1,497 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html, body {
+  position: relative;
+  height: 100%;
+}
+/*头部*/
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 14px;
+    color: #828282;
+    border-bottom: 1px solid lightgray;
+    transition: all .5s;
+}
+header .ic-yijia{
+    font-size: 2rem;
+}
+header a{
+    color: #828282;
+}
+header .container-fluid span{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #828282;
+}
+.full-screen{
+    line-height: 350%;
+    background-color: #fff;
+}
+.header__right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+.header__right>li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color .5s;
+}
+.account-detail, .shopping-detail{
+    position: absolute;
+    z-index: 2;
+    left: -200px; top: 52px;
+    width: 320px;
+    line-height: 300%;
+    padding: 40%;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,.1);
+    list-style: none;
+    display: none;
+}
+.account-detail li{
+    border-bottom: 1px solid lightgray;
+}
+/*轮播图*/
+.swiper-container {
+  width: 100%;
+}
+.swiper-slide {
+  height: 700px;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-button-next, .swiper-button-prev{
+    width: 50px;
+    height: 50px;
+    color: #5b5b5b;;
+    border-radius: 100%;
+    background: url(../img/arrow.png) center no-repeat;
+    background-color: rgba(216, 216, 216, 0.2);
+    transition: background-color .5s;
+}
+.swiper-button-prev{
+    transform: rotate(180deg);
+}
+.swiper-button-next:hover, .swiper-button-prev:hover{
+    background-color: rgba(216, 216, 216, 0.8);
+}
+.swiper-pagination-bullets{
+    top: 92%;
+}
+.swiper-pagination-bullet{
+    width: 50px;
+    height: 4px;
+    border-radius:0;
+}
+.lunbo_1__price{
+    padding: 4% 0;
+}
+.lunbo_1__p{
+    font-weight: 700;
+}
+.lunbo_3__price{
+    padding: 4% 0;
+}
+.buy-btn{
+    padding: 1.4% 5%;
+    margin-bottom: 2%;
+}
+.order-btn{
+    padding: 2% 7%;
+    margin-bottom: 4%;
+}
+    /*第二主体*/
+.section-one h5{
+    position: absolute;
+    margin: 4% 0 0 5%;
+}
+/*第三主体*/
+.section-two{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 37.5vw;
+    background: url(../img/attend.jpg) center/cover no-repeat;
+}
+.section-two__h2{
+    font-size: 48px;
+    font-weight: 300;
+}
+.my-join a{
+    width: 100%;
+    color: #fff;
+    display: block;
+    height: 100%;
+    line-height: 100%;
+}
+.my-join:hover{
+    background-color: #fff;
+    color: #000;
+}
+/*第四主体*/
+.section-three{
+    justify-content: center;
+    padding: 6% 0;
+    color: #333;
+    background-color: #f6f6f6;
+}
+.section-three__row{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f6f6f6;
+}
+.section-three .own-3{
+    display: flex;
+    flex-flow: column wrap;
+    transition: all .3s;
+}
+.section-three .own-3:hover{
+    box-shadow: 0 17px 50px 0 rgba(0,0,0,.19);
+    transform: translateY(-3px);
+}
+.section-three h6{
+    padding:10% 5% 0;
+    font-weight: 500;
+    background-color: #fff;
+}
+.section-three p{
+    padding: 5% 5% 10%;
+    margin-top: -2%;
+    font-size: 14px;
+    font-weight: 300;
+    background-color: #fff;
+}
+/*第五主体*/
+.section-four{
+    max-width: 1200px;
+}
+.section-four .own-4{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    color: #333;
+    font-weight: 300;
+}
+.section-four i{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+.seven{
+    background: url(../img/sprit_p.png) 0 -280px/80px auto;
+}
+.fifteen{
+    background: url(../img/sprit_p.png) 0 0/80px auto;
+}
+.thirty{
+    background: url(../img/sprit_p.png) 0 -160px/80px auto;
+}
+.ninty-nine{
+    background: url(../img/sprit_p.png) 0 -400px/80px auto;
+}
+/*底部*/
+footer{
+    line-height: 250%;
+    border-top: 1px solid rgba(0,0,0,.1);
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #fff;
+}
+.footer__row{
+    max-width: 1200px;
+    padding: 2% 0;
+    margin: 0 auto;
+}
+footer dt{
+    line-height: 300%;
+    font-weight: 300;
+}
+footer dd{
+    padding-left: 5%;
+    font-size:14px;
+    color: #828282;
+    margin-left: -10px;
+}
+footer dd:hover{
+    color: #5b5b5b;
+    cursor: pointer;
+}
+footer .own-ft span{
+    float: right;
+    color: #101920;
+    font-weight: 800;
+    font-size: 30px;
+}
+footer .own-ft .hidden{
+    visibility: hidden;
+}
+footer .own-ft-last{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: #828282;
+}
+.footer__p-phone{
+    font-size: 20px;
+    color: black;
+}
+.footer__i{
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
+}
+.qr-code{
+    position: absolute;
+    z-index: 1;
+    margin: -160px 0 0 -51px;
+    width: 120px;
+    height: 120px;
+    display: none;
+}
+.footer__i:first-child:hover .qr-code{
+    display: block;
+}
+.bg-own{
+    background-color: #f9f9f9;
+}
+.footer__center, .footer__bottom{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.footer__center{
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.china{
+    width: 31px;
+    height: 21px;
+    margin-right: 15px;
+    vertical-align: middle;
+    background: url(../img/country_sprit.png) -3px -127px/auto;
+    transform: scale(.7);
+}
+footer .last-p{
+    color: rgba(0,0,0,.1);
+    font-size: 12px;
+}
+.last-p span{
+    padding: 0 5%;
+    color: #828282;
+}
+.footer__bottom__left{
+    line-height: 100%;
+}
+.footer__bottom__left .first-p{
+    color: #828282;
+    font-size: 12px;
+}
+.police{
+    background: url(../img/police.png);
+}
+@media (max-width: 1199.9px) {
+    /*头部*/
+    .full-screen{
+        position: fixed;
+        z-index: 2;
+        left: 0; top: 0;
+        width: 9999px;
+        height: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 16px;
+    }
+    .full-screen li{
+        padding-left: 30px;
+    }
+    .full-screen a:hover{
+        text-decoration: none;
+    }
+    .full-screen .own-li{
+        background-color: #f6f6f6;
+    }
+    .full-screen .btn-remove{
+        position: relative;
+        margin-left: -16px;
+    }
+    .full-screen .own-search{
+        position: absolute;
+        z-index: 1;
+        margin: 1% 0 0 2%;
+        font-size: 1.2rem;
+        color: #101920;
+    }
+    /*底部*/
+    footer.container-fluid{
+        padding: 0;
+    }
+    .own-ft{
+        height: 48px;
+        border-bottom: 1px solid rgba(0,0,0,.1);
+        overflow: hidden;
+        transition: all .5s;
+    }
+    .own-ft-animating{
+        height: 250px;
+    }
+    footer .own-ft-last{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer>.container-fluid{
+        padding: 0;
+    }
+    .footer__center{
+        flex-flow: column wrap;
+        text-align: center;
+    }
+    .footer__center p{
+        border-bottom: 1px solid rgba(0,0,0,.1);
+    }
+    .last-p span{
+        padding: 0 1%;
+    }
+}
+@media (min-width: 1210px){
+    /*头部*/
+    .full-screen li{
+        text-align: center;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom-color .5s, color .5s;
+    }
+    .full-screen li:hover{
+        border-bottom: 2px solid #eb0028;
+    }
+    .full-screen li:hover a{
+        color: #eb0028;
+        text-decoration: none;
+    }
+    .header__right>li:hover{
+        border-bottom: 2px solid #101920;
+    }
+    .header__right>li:hover span{
+        color: #101920;
+        transition: color .5s ;
+    }
+    .account:hover .account-detail{
+        display: block;
+    }
+    .account-detail a{
+        text-decoration: none;
+    }
+    .shopping:hover .shopping-detail{
+        display: block;
+    }
+}
+@media (min-width: 768px){
+    /*轮播*/
+    .lunbo_1{
+        justify-content: flex-start;
+        padding-left: 18%;
+        background: url(../img/lunbo_1.jpg) center center/cover no-repeat;
+    }
+    .lunbo_2{
+        align-items: center;
+        padding-left: 25%;
+        background: url(../img/lunbo_2.jpg) center center/cover no-repeat;
+    }
+    .lunbo_3{
+        justify-content: center;
+        align-items: center;
+        padding-left: 34%;
+        background: url(../img/lunbo_3.jpg) center center/cover no-repeat;
+    }
+    .lunbo_1__h2{
+        font-size: 48px;
+        font-weight: 700;
+    }
+    .lunbo_2__h3, .lunbo_3__h3{
+        font-weight: 600;
+    }
+    .lunbo_2__h2, .lunbo_3__h2{
+        font-size: 48px;
+        font-weight: 700;
+    }
+    .lunbo_2__price{
+        padding: 1% 0;
+    }
+    .section-four .own-4{
+        margin: 3% 0;
+    }
+}
+@media (max-width: 768px){
+    /*轮播*/
+    .lunbo_1{
+        align-items: flex-start;
+        background: url(../img/lunbo_p_1.jpg) center top/cover no-repeat;
+    }
+    .lunbo_1__box{
+        justify-content: center;
+        text-align: center;
+    }
+    .lunbo_2{
+        align-items: flex-start;
+        background: url(../img/lunbo_p_2.jpg) center center/cover no-repeat;
+    }
+    .lunbo_3{
+        justify-content: center;
+        align-items: flex-start;
+        background: url(../img/lunbo_p_3.jpg) center top/cover no-repeat;
+    }
+    .lunbo_1__h2{
+        width: 100%;
+        font-weight: 700;
+        line-height: 150%;
+        font-size: 2rem;
+    }
+    .lunbo_1__p{
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+    .lunbo_1__p:last-child{
+        padding: 5% 0;
+    }
+    .lunbo_2__h3, .lunbo_3__h3{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .lunbo_2__h2, .lunbo_3__h2{
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .section-two{
+        height: 50vw;
+    }
+    .footer__bottom{
+        flex-flow: column wrap;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media(max-width: 576px){
+    .lunbo_1__box
+}

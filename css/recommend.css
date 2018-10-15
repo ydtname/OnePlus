@@ -1,0 +1,684 @@
+/*头部*/
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 14px;
+    color: #828282;
+    border-bottom: 1px solid lightgray;
+    transition: all .5s;
+}
+header a{
+    color: #828282;
+}
+header .ic-yijia{
+    font-size: 2rem;
+}
+header .container-fluid span{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #828282;
+}
+.full-screen{
+    line-height: 350%;
+    background-color: #fff;
+}
+.header__right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+.header__right>li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color .5s;
+}
+.account-detail, .shopping-detail{
+    position: absolute;
+    z-index: 2;
+    left: -200px; top: 52px;
+    width: 320px;
+    line-height: 300%;
+    padding: 40%;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,.1);
+    list-style: none;
+    display: none;
+}
+.account-detail li{
+    border-bottom: 1px solid lightgray;
+}
+/*底部*/
+footer{
+    line-height: 250%;
+    border-top: 1px solid rgba(0,0,0,.1);
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #fff;
+}
+.footer__row{
+    max-width: 1200px;
+    padding: 2% 0;
+    margin: 0 auto;
+}
+footer dt{
+    line-height: 300%;
+    font-weight: 300;
+}
+footer dd{
+    padding-left: 5%;
+    font-size:14px;
+    color: #828282;
+    margin-left: -10px;
+}
+footer dd:hover{
+    color: #5b5b5b;
+    cursor: pointer;
+}
+footer .own-ft span{
+    float: right;
+    color: #101920;
+    font-weight: 800;
+    font-size: 30px;
+}
+footer .own-ft .hidden{
+    visibility: hidden;
+}
+footer .own-ft-last{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: #828282;
+}
+.footer__p-phone{
+    font-size: 20px;
+    color: black;
+}
+.footer__i{
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
+}
+.qr-code{
+    position: absolute;
+    z-index: 1;
+    margin: -160px 0 0 -51px;
+    width: 120px;
+    height: 120px;
+    display: none;
+}
+.footer__i:first-child:hover .qr-code{
+    display: block;
+}
+.bg-own{
+    background-color: #f9f9f9;
+}
+.footer__center, .footer__bottom{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.footer__center{
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.china{
+    width: 31px;
+    height: 21px;
+    margin-right: 15px;
+    vertical-align: middle;
+    background: url(../img/country_sprit.png) -3px -127px/auto;
+    transform: scale(.7);
+}
+footer .last-p{
+    color: rgba(0,0,0,.1);
+    font-size: 12px;
+}
+.last-p span{
+    padding: 0 5%;
+    color: #828282;
+}
+.footer__bottom__left{
+    line-height: 100%;
+}
+.footer__bottom__left .first-p{
+    color: #828282;
+    font-size: 12px;
+}
+.police{
+    background: url(../img/police.png);
+}
+/*推荐*/
+.recommend{
+    min-height: 600px;
+    background: url(../img/big_recommend.jpg) center/cover no-repeat;
+}
+.recommend__h1{
+    font-size: 40px;
+    font-weight: 400;
+}
+.recommend__p{
+    line-height: 200%;
+    margin: 10% 0;
+}
+.get-href{
+    padding: 3% 0;
+    margin-bottom: 6%;
+    font-size: 18px;
+    border-radius: 2px;
+}
+.recommend i{
+    margin-right: 1.5%;
+}
+/*如何使用*/
+.how-use{
+    padding: 15% 0 10%;
+}
+.how-use__box{
+    max-width: 1210px;
+}
+.how-use__h2{
+    margin-bottom: 7%;
+    font-size: 32px;
+    font-weight: 400;
+}
+.how-use__box>div{
+    width: 22%;
+}
+.how-use__arrow{
+    position: absolute;
+    z-index: 1;
+    margin: 30px 0 0 -30px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/right_arrow.svg) center no-repeat;
+}
+.how-use__box p{
+    line-height: 200%;
+    margin-top: 45%;
+    font-size: 14px;
+}
+.share{
+    background: url(../img/share.svg) center top/auto no-repeat;
+}
+.coupon{
+    background: url(../img/coupon.svg) center top/auto no-repeat;
+}
+.integral{
+    background: url(../img/integral.svg) center top/auto no-repeat;
+}
+.gift{
+    background: url(../img/gift.svg) center top/auto no-repeat;
+}
+/*积分兑换*/
+.exchange{
+    background-color: #f9f9f9;
+}
+.exchange__box{
+    max-width: 1210px;
+}
+.exchange__h2{
+    margin: 5% 0 3%;
+    font-size: 32px;
+    font-weight: 400;
+}
+.exchange__h3{
+    font-size: 18px;
+    font-weight: 300;
+}
+.exchange__list{
+    padding: 5% 0 10%;
+}
+.exchange__list>div{
+    width: 23%;
+    padding-bottom: 3%;
+    margin-right: 15px;
+    margin-bottom: 2%;
+    align-items: center;
+    background-color: #fff;
+    transition: all .3s;
+}
+.exchange__list>div:hover{
+    box-shadow: 0 7px 35px 0 rgba(0, 0, 0, 0.19);
+    transform: translateY(-3px);
+}
+.exchange__list img{
+    height: 228px;
+}
+.exchange__list p{
+    line-height: 250%;
+}
+.exchange__list del{
+    margin-right: 8%;
+    font-size: 16px;
+    color: #333;
+}
+.exchange__list span{
+    font-size: 20px;
+    color: #EB0028;
+}
+.exchange-btn{
+    padding: 3% 20%;
+    color: #ccc;
+    font-size: 14px;
+    border: 1px solid #CCC;
+    border-radius: 2px;
+    background-color: #fff;
+}
+/*排行榜*/
+.leaderboard{
+    padding-top: 8%;
+}
+.leaderboard__box{
+    max-width: 1210px;
+}
+.leaderboard__box__h2{
+    font-size: 32px;
+    font-weight: 400;
+}
+.leaderboard__box__h3{
+    line-height: 300%;
+    font-size: 18px;
+    color: #666;
+}
+.leaderboard__time a{
+    padding-bottom: 5%;
+    color: black;
+    text-decoration: none;
+}
+.this-month{
+    border-bottom: 2px solid #ff0000;
+}
+.leaderboard{
+    background-color: #EFEFEF;
+}
+.leaderboard__content{
+    padding: 2% 3%;
+    margin-top: 2%;
+    box-shadow: 0 0 15px 7px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+.leaderboard__content>p{
+    line-height: 250%;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+.rangking{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 50%;
+    padding-left: 15px;
+    margin: 1% 0;
+}
+.rangking p:first-child{
+    width: 25px;
+    height: 30px;
+    line-height: 250%;
+    text-align: center;
+}
+.rangking p.mark{
+    width: 25px;
+    height: 30px;
+    line-height: 150%;
+    color: white;
+    border-radius: 5px;
+    background-color: #FAC016;
+    text-align: center;
+}
+.rangking .user-name{
+    width: 250px;
+    line-height: 300%;
+    font-size: 14px;
+}
+.rangking .invite{
+    line-height: 300%;
+    margin-right: 8%;
+    color: #999;
+    font-size: 12px;
+}
+.invite span{
+    padding: 0 5px;
+    font-size: 18px;
+    color: #EB0028;
+}
+.leaderboard__box i{
+    margin-right: 1%;
+}
+/*奖品区*/
+.prize-show{
+    margin-top: 1%;
+}
+.item-big{
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.item-small{
+    height: 50%;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd ;
+}
+.prize-show img{
+    width: 100%;
+}
+.prize-show p{
+    margin-top: -12%;
+}
+/*常见问题*/
+.commonly-problem__h2{
+    margin: 10% 0 5%;
+    font-size: 32px;
+    font-weight: 400;
+}
+.commonly-problem__box{
+    max-width: 900px;
+}
+.commonly-problem__box dl{
+    padding: 5% 10% 3%;
+    border-top: 1px solid #ddd;
+    background: url(../img/question.svg) 1rem 2.5rem no-repeat;
+    transition: height .5s;
+}
+.commonly-problem__box .dl-animating{
+    height: 180px;
+}
+.commonly-problem__box .show{
+    display: block;
+}
+.commonly-problem__box .hidden{
+    display: none;
+}
+.commonly-problem__box dt{
+    margin-bottom: 3%;
+    font-size: 16px;
+    font-weight: 400;
+}
+.commonly-problem__box dd{
+    line-height: 24px;
+    font-size: 14px;
+    color: #999;
+}
+@media (min-width: 1210px){
+    .full-screen li{
+        text-align: center;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom-color .5s, color .5s;
+    }
+    .full-screen li:hover{
+        border-bottom: 2px solid #eb0028;
+    }
+    .full-screen li:hover a{
+        color: #eb0028;
+        text-decoration: none;
+    }
+    .header__right>li:hover{
+        border-bottom: 2px solid #101920;
+    }
+    .header__right>li:hover span{
+        color: #101920;
+        transition: color .5s ;
+    }
+    .account:hover .account-detail{
+        display: block;
+    }
+    .account-detail a{
+        text-decoration: none;
+    }
+    .shopping:hover .shopping-detail{
+        display: block;
+    }
+}
+@media (max-width: 1199.9px){
+    /*积分兑换*/
+    .exchange__list>div{
+        width: 30%;
+        margin-right: 30px;
+    }
+    /*头部*/
+    .full-screen{
+        position: fixed;
+        z-index: 2;
+        left: 0; top: 0;
+        width: 9999px;
+        height: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 16px;
+    }
+    .full-screen li{
+        padding-left: 30px;
+    }
+    .full-screen .own-li{
+        background-color: #f6f6f6;
+    }
+    .full-screen .btn-remove{
+        position: relative;
+        margin-left: -16px;
+    }
+    .full-screen .own-search{
+        position: absolute;
+        z-index: 1;
+        margin: 1% 0 0 2%;
+        font-size: 1.2rem;
+        color: #101920;
+    }
+    /*底部*/
+    footer.container-fluid{
+        padding: 0;
+    }
+    .own-ft{
+        height: 48px;
+        border-bottom: 1px solid rgba(0,0,0,.1);
+        overflow: hidden;
+        transition: all .5s;
+    }
+    .own-ft-animating{
+        height: 250px;
+    }
+    footer .own-ft-last{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer>.container-fluid{
+        padding: 0;
+    }
+    .footer__center{
+        flex-flow: column wrap;
+        text-align: center;
+    }
+    .footer__center p{
+        border-bottom: 1px solid rgba(0,0,0,.1);
+    }
+    .last-p span{
+        padding: 0 1%;
+    }
+}
+@media (max-width: 948px){
+    /*积分兑换*/
+    .exchange__list>div{
+        margin-right: 15px;
+    }
+}
+@media (max-width: 768px){
+    /*推荐*/
+    .recommend{
+        min-height: 0;
+        padding-bottom: 8%;
+        background-image: url(../img/big_recommend_p.jpg);
+    }
+    .recommend__h1{
+        margin-top: 12%;
+        font-size: 32px;
+    }
+    .recommend__p{
+        margin: 8% 0;
+    }
+    .get-href{
+        padding: 2% 0;
+        font-size: 18px;
+    }
+    /*如何使用*/
+    .how-use{
+        padding: 15% 0 10%;
+    }
+    .how-use__box{
+        max-width: 1210px;
+    }
+    .how-use__h2{
+        margin-bottom: 7%;
+        font-size: 32px;
+        font-weight: 400;
+    }
+    .how-use__box>div{
+        position: relative;
+        width: 100%;
+    }
+    .how-use__arrow{
+        left: 48%; top: -54%;
+        margin: 0;
+        transform: rotate(90deg);
+    }
+    .how-use__box p{
+        padding: 0 2% 5% 95px;
+        margin-top: 4%;
+    }
+    .share,.coupon,.integral,.gift{
+        background-position: 20px -1px;
+        background-size: 50px;
+    }
+    /*积分兑换*/
+    .exchange__list{
+        justify-content: space-between;
+    }
+    .exchange__list>div{
+        width: 48%;
+        margin-right: 0;
+        margin-bottom: 5%;
+    }
+    .exchange__list p{
+        line-height: 150%;
+    }
+    body .exchange__list>div>p:first-of-type{
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+    }
+    .exchange__list img{
+        height: 125px;
+    }
+    /*排行榜*/
+    .leaderboard__box__h2{
+        font-size: 24px;
+    }
+    .leaderboard__box__h3{
+        font-size: 16px;
+    }
+    .look-rule{
+        display: inline-block;
+        width: 500px;
+    }
+    .rangking{
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .rangking .user-name{
+        width: 100px;
+        margin-left: 25px;
+    }
+    .rangking .invite{
+        width: 120px;
+        margin: 0 0 0 47%;
+    }
+    /*奖品区*/
+    .prize-show{
+        overflow: hidden;
+    }
+    .prize-show img{
+        float: right;
+        width: 30%;
+    }
+    .prize-show p{
+        padding-top: 5%;
+        margin-top: 0;
+    }
+    .item-big{
+        border-right: none;
+    }
+    .item-small{
+        height: 35%;
+    }
+    .prize-show .left-img{
+        width: 15%;
+    }
+    /*常见问题*/
+    .commonly-problem__h2{
+        font-size: 24px;
+    }
+    .commonly-problem__box dl{
+        display: flex;
+        flex-flow: wrap row;
+        height: 100px;
+        padding: 4% 0 0 1%;
+        background: none;
+        overflow: hidden;
+    }
+    .commonly-problem__box dt{
+        width: 100%;
+        margin-top: 2%;
+    }
+    .commonly-problem__box span{
+        float: right;
+        margin-top: -1%;
+        color: #101920;
+        font-weight: 800;
+        font-size: 30px;
+    }
+    .commonly-problem__box dd{
+        display: none;
+        line-height: 24px;
+        font-size: 14px;
+        color: #999;
+    }
+    /*底部*/
+    .footer__bottom{
+        flex-flow: column wrap;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media (max-width: 576px){
+    .recommend{
+        padding-bottom: 12%;
+    }
+    .recommend__h1{
+        margin: 25% 0 10%;
+    }
+    .how-use__arrow{
+        top: -37%;
+    }
+    .look-rule{
+        width: 320px;
+    }
+    .leaderboard{
+        padding: 0 10px;
+    }
+    .leaderboard__box{
+        padding: 12% 0;
+    }
+    .leaderboard__content{
+        padding: 0;
+        box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
+    }
+    .leaderboard__content>p{
+        line-height: 400%;
+    }
+    .rangking .invite{
+        margin-left: 21%;
+    }
+}
